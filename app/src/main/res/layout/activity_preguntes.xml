@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Número de aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_aciertos"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/txt_Jugador"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Jugador actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Jugador"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:text="Número de errores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_erorres"
+        android:layout_alignBaseline="@+id/txt_aciertos"
+        android:layout_alignBottom="@+id/txt_aciertos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/txt_aciertos_num"
+        android:layout_below="@+id/txt_aciertos"
+        android:layout_alignRight="@+id/txt_Jugador"
+        android:layout_alignEnd="@+id/txt_Jugador"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_errores_num"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignBaseline="@+id/txt_aciertos_num"
+        android:layout_alignBottom="@+id/txt_aciertos_num"
+        android:layout_alignLeft="@+id/txt_erorres"
+        android:layout_alignStart="@+id/txt_erorres" />
+
+    <TextView
+        android:text="pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_aciertos_num"
+        android:layout_alignRight="@+id/txt_aciertos_num"
+        android:layout_alignEnd="@+id/txt_aciertos_num"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txt_pregunta" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etRespuesta"
+        android:hint="Introduce tu respuesta"
+        android:layout_below="@+id/txt_pregunta"
+        android:layout_alignLeft="@+id/txt_pregunta"
+        android:layout_alignStart="@+id/txt_pregunta" />
+
+    <Button
+        android:text="SIGUIENTE PREGUNTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bt_seguent" />
+</RelativeLayout>
